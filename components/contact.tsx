@@ -1,12 +1,12 @@
 import MotionSection from "./motion_section";
 
-const About = () => {
+const Contact = () => {
   return (
     <MotionSection
-      id="projects"
+      id="about"
       style={{ fontSize: "2rem", marginBottom: "5rem" }}
     >
-      <h1>Projects</h1>
+      <h1>Get in touch</h1>
       <h2>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
         soluta, illo, recusandae ab illum rerum expedita iusto voluptatibus
@@ -17,4 +17,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
