@@ -3,11 +3,15 @@
 import "/styles/navbar.css";
 import Link from "next/link";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav>
+    <motion.nav
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.25 }}
+    >
       <div id="nav_content">
         <Link href="/">
           <Image src="/logo.svg" alt="Logo" width={48} height={48} />
@@ -20,7 +24,7 @@ const Navbar = () => {
           <Link href="#contact">Contact</Link>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

@@ -7,15 +7,23 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <motion.header
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.1, duration: 0.5 }}
-    >
-      <div id="bg-img">
+    <header>
+      <motion.div
+        id="bg-img"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.3 }}
+      >
         <SvgHero />
-      </div>
-      <div id="hero">
+      </motion.div>
+      <motion.div
+        id="hero"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.3 }}
+      >
         <p>Hi! I'm</p>
         <h1>Maciej Bernatowicz</h1>
         <p>
@@ -30,6 +38,7 @@ export default function Home() {
             href="./CV_Maciej_Bernatowicz_english.pdf"
             type="application/pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Resume
             <svg
@@ -51,7 +60,7 @@ export default function Home() {
             </svg>
           </a>
         </div>
-      </div>
-    </motion.header>
+      </motion.div>
+    </header>
   );
 }
