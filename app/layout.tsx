@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Manrope } from "next/font/google";
 import Navbar from "../components/navbar";
 import About from "../components/about";
 import Projects from "../components/projects";
@@ -8,10 +8,10 @@ import Footer from "../components/footer";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 
-const rubik = Rubik({
+const manrope = Manrope({
   subsets: ["latin"],
   fallback: ["sans-serif"],
-  variable: "--font-rubik",
+  variable: "--font-Manrope",
   display: "swap",
   preload: true,
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rubik.className}`}>
+      <body className={`${manrope.className}`}>
         <Navbar />
         <main>
           {children}

@@ -16,31 +16,12 @@ header {
 }
 
 #hero > h1 {
-  width: fit-content;
   font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(
-    to top right,
-    hsl(220, 50%, 98%),
-    hsl(220, 50%, 75%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#hero > p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.4;
-  color: hsl(220, 25%, 75%);
 }
 
 #hero > p:first-of-type {
   line-height: normal;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
 }
 
 #hero > p:last-of-type {

@@ -3,13 +3,14 @@ nav {
   top: 0;
   width: 100%;
   background-color: rgba(20 28 41 / 0.75);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   padding: 0.75rem 4rem;
   margin-block: 0.75rem -84px;
+  z-index: 100;
 }
 
 #nav_content {
-  max-width: 1550px;
+  max-width: 1500px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,6 +33,7 @@ nav {
   width: max-content;
   float: left;
   font-size: 1.25rem;
+  font-weight: 500;
   color: var(--text-color);
 }
 
@@ -44,5 +46,10 @@ nav {
 
 #nav_links > a {
   font-size: 1.2rem;
-  color: hsl(220, 20%, 75%);
+  color: hsl(220, 25%, 75%);
+  transition: color 0.2s ease-in-out;
+}
+
+#nav_links > a:hover {
+  color: hsl(220, 35%, 90%);
 }
