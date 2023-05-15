@@ -14,7 +14,7 @@ const MotionSection = ({ id, style, children }: MotionSectionProps) => {
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.4 }}
+      transition={{ delay: 0.4, duration: 0.4 }}
       id={id}
       style={style}
     >
