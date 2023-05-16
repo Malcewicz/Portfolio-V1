@@ -1,0 +1,45 @@
+#education {
+  padding-top: 0;
+}
+
+#education span {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  gap: 1rem;
+}
+
+#education span > h4 {
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+#education span > p {
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+#education article {
+  max-width: 950px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #education span {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #education span > h4 {
+    font-size: 1.4rem;
+    order: 2;
+  }
+
+  #education span > p {
+    font-size: 1.1rem;
+    order: 1;
+  }
+}
