@@ -17,6 +17,7 @@ header {
 
 #hero > h1 {
   font-size: 4rem;
+  line-height: 1.2;
 }
 
 #hero > p:first-of-type {
@@ -33,4 +34,30 @@ header {
   flex-grow: 1;
   flex-shrink: 0;
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  #hero {
+    margin-left: 0;
+  }
+
+  #hero > h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  #hero > p {
+    font-size: 1.2rem;
+  }
+
+  #bg-img {
+    width: 90%;
+    flex-grow: 0;
+    margin-left: 0;
+  }
 }

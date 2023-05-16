@@ -1,3 +1,8 @@
+#left {
+  width: 65%;
+  float: left;
+}
+
 #left p {
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -8,26 +13,21 @@
   column-gap: 1rem;
 }
 
-#left {
-  width: 65%;
-  float: left;
-}
-
 #right::before {
   content: "";
   position: absolute;
-  left: -1rem;
-  display: block;
+  left: -2rem;
   height: 100%;
+  display: block;
   width: 1px;
-  border-radius: 25%;
+  border-radius: 25px;
   background: hsl(200, 80%, 50%);
 }
 
 #right {
   position: relative;
-  width: calc(35% - 2rem);
-  margin-left: 2rem;
+  width: calc(35% - 3rem);
+  margin-left: 3rem;
   float: left;
 }
 
@@ -50,4 +50,33 @@
 
 #right p {
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #left {
+    width: 100%;
+  }
+
+  #left p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  #right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #right::before {
+    display: none;
+  }
+
+  #right h4 {
+    font-size: 1.2rem;
+  }
+
+  #right p {
+    font-size: 1.1rem;
+  }
 }

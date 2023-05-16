@@ -5,6 +5,7 @@ const About = () => {
   return (
     <MotionSection id="about">
       <h2>About me</h2>
+
       <div id="left">
         <p>
           Hello! My name is Maciej, I'm an 18 year old software developer
@@ -23,6 +24,7 @@ const About = () => {
           start-up.
         </p>
       </div>
+
       <div id="right">
         <ul>
           <li>
@@ -36,7 +38,8 @@ const About = () => {
           <li>
             <h4>Tools</h4>
             <p>
-              Figma, Github, Git, Firebase, Adobe Photoshop, Adobe Lightroom
+              Figma, Github, Git, Firebase, Wordpress, Vercel, Adobe Lightroom,
+              ChatGPT
             </p>
           </li>
         </ul>

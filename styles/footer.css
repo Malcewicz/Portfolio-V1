@@ -8,3 +8,9 @@ footer {
 footer a {
   color: rgba(232 237 247 / 0.75);
 }
+
+@media screen and (max-width: 768px) {
+  footer a {
+    font-size: 0.9rem;
+  }
+}

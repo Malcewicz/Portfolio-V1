@@ -1,7 +1,7 @@
 :root {
   --background-color: hsl(220, 30%, 12%);
   --primary-color: hsl(200, 80%, 50%);
-  --text-color: hsl(220, 50%, 95%);
+  --text-color: hsl(220, 50%, 90%);
   --light-text-color: hsl(220, 25%, 75%);
 }
 
@@ -30,7 +30,7 @@ body {
 /* Section styles */
 
 main {
-  max-width: 1600px;
+  max-width: calc(1500px + 10rem);
   display: flex;
   flex-direction: column;
   padding: 0 5rem;
@@ -38,17 +38,19 @@ main {
 }
 
 section {
+  width: 100%;
   max-width: 1250px;
   padding-block: 7rem;
   margin-inline: auto;
+  margin-bottom: 4rem;
 }
 
-section > h2 {
+section h2 {
   font-size: 3.2rem;
   margin-bottom: 2.75rem;
 }
 
-section > p {
+section p {
   line-height: 1.5;
 }
 
@@ -57,18 +59,22 @@ section > p {
 h1,
 h2 {
   width: fit-content;
-  /* font-size: 4rem; */
   font-weight: 800;
   margin-bottom: 1rem;
   color: transparent;
   background: linear-gradient(
-    to top right,
+    to bottom right,
     hsl(220, 50%, 98%),
     hsl(220, 50%, 75%)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
 }
 
 p {
@@ -79,6 +85,9 @@ p {
 }
 
 a {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
   color: inherit;
   text-decoration: none;
 }
@@ -114,7 +123,7 @@ li {
   border: 3px solid var(--primary-color);
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 300ms;
+  transition: transform 300ms, box-shadow 200ms;
 }
 
 .btn:hover {
@@ -133,7 +142,52 @@ li {
   display: flex;
   flex-direction: row;
   place-items: center;
+  gap: 0.5rem;
   font-size: 1.1rem;
   font-weight: 700;
   padding: 0.65rem 1.875rem;
+}
+
+.btn.active {
+  background-color: rgba(25 160 230 / 0.5);
+  border-color: transparent;
+  color: var(--text-color);
+}
+
+.btn.active:hover,
+.btn.active > a {
+  box-shadow: none;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+
+  section {
+    padding-block: 5rem 0;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section p {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    text-align: start;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .btn > a {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
 }

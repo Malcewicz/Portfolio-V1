@@ -10,14 +10,15 @@ const Navbar = () => {
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.25 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
-      <div id="nav_content">
+      <div id="nav-content">
         <Link href="/">
           <Image src="/logo.svg" alt="Logo" width={48} height={48} />
-          <p id="logo_text">Maciej Bernatowicz</p>
+          <p id="logo-text">Maciej Bernatowicz</p>
         </Link>
-        <div id="nav_links">
+        <div id="nav-links">
+          <p id="mobile-nav">navigation coming soon</p>
           <Link href="#about">About me</Link>
           <Link href="#projects">Projects</Link>
           <Link href="#experience">Experience</Link>
