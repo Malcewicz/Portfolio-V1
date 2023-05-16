@@ -7,6 +7,7 @@ import Projects from "../components/projects";
 import Footer from "../components/footer";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Education from "@/components/education";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
           <About />
           <Projects />
           <Experience />
+          <Education />
           <Contact />
         </main>
         <Footer />
