@@ -1,0 +1,45 @@
+#contact {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+}
+
+#contact > h2 {
+  margin-bottom: 1.5rem;
+}
+
+#contact > .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  place-items: space-between;
+  gap: 2rem;
+  padding-block: 1.5rem 1rem;
+}
+
+.row > a {
+  color: var(--light-text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  gap: 0.25rem;
+  transition: color 200ms ease-in-out, transform 300ms;
+}
+
+.row > a:hover {
+  transform: translateY(-2px);
+  color: hsl(220, 35%, 90%);
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    text-align: start;
+    place-items: start;
+  }
+
+  #contact > .row {
+    padding-block: 1rem 0.5rem;
+    gap: 1rem;
+  }
+}

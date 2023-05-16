@@ -1,42 +1,45 @@
+import "@/styles/contact.css";
 import MotionSection from "./motion_section";
+import {
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+  AiOutlinePhone,
+} from "react-icons/ai";
+import ExternalLink from "./external_link";
+import Link from "next/link";
 
 const Contact = () => {
   return (
     <MotionSection id="contact">
       <h2>Get in touch</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        dolores molestiae nulla cupiditate asperiores optio sapiente doloremque
-        culpa debitis error, obcaecati temporibus exercitationem ratione
-        necessitatibus molestias fugiat magni repellat animi? Exercitationem,
-        quisquam!
+        Feel free to reach out to me through any of the channels below. My inbox
+        is always open for discussing potential collaborations, answering any
+        questions you may have, or connecting with fellow developers and
+        designers. I'm looking forward to hearing from you!
       </p>
-      <br />
-      <div className="btn">
+      <div className="row">
+        <a href="https://github.com/Malcewicz" target="_blank">
+          <AiOutlineGithub size={30} color="hsl(200, 80%, 50%)" />
+          Malcewicz
+        </a>
         <a
-          href="./CV_Maciej_Bernatowicz_english.pdf"
-          type="application/pdf"
+          href="https://linkedin.com/in/maciej-bernatowicz-3a4627182"
           target="_blank"
         >
-          Email me
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            style={{ marginLeft: "0.5rem" }}
-          >
-            <path fill="none" d="M0 0h24v24H0z"></path>
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
-            ></path>
-          </svg>
+          <AiOutlineLinkedin size={30} color="hsl(200, 80%, 50%)" />
+          Maciej Bernatowicz
         </a>
+        <a href="callto:+48733326433" target="_blank">
+          <AiOutlinePhone size={30} color="hsl(200, 80%, 50%)" />
+          +48 733 326 433
+        </a>
+      </div>
+      <div className="btn">
+        <Link href="mailto:maciej@bernatowicz.dev" target="_blank">
+          Email me
+          <ExternalLink />
+        </Link>
       </div>
     </MotionSection>
   );
