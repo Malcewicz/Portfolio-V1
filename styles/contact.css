@@ -39,6 +39,7 @@
   }
 
   #contact > .row {
+    flex-direction: column;
     padding-block: 1rem 0.5rem;
     gap: 1rem;
   }

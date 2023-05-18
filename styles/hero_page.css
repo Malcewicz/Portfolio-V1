@@ -39,7 +39,7 @@ header {
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 3vh;
   }
 
   #hero {

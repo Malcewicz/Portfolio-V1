@@ -23,6 +23,7 @@ const About = () => {
           Currently I'm working towards a project that may become my own
           start-up.
         </p>
+        {/* <p>Here are a few tecchnologies I know:</p> */}
       </div>
 
       <div id="right">
