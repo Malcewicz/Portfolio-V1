@@ -4,6 +4,7 @@ import "@/styles/projects.css";
 import MotionSection from "./motion_section";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -17,10 +18,13 @@ const About = () => {
           transition={{ delay: 0.5, duration: 0.4 }}
           className="card"
         >
-          <img
-            src="/lakeview_1080p.webp"
-            alt="Screenshot of the main page of LakeView Apartments"
-          />
+          <div className="card-img">
+            <Image
+              fill
+              src="/lakeview_1080p.webp"
+              alt="Screenshot of the main page of LakeView Apartments"
+            />
+          </div>
           <div className="card-content">
             <h3>LakeView Apartments</h3>
             <p>
@@ -63,10 +67,13 @@ const About = () => {
           transition={{ delay: 0.7, duration: 0.4 }}
           className="card"
         >
-          <img
-            src="/portfolio_1080p.webp"
-            alt="Screenshot of the main page of my portfolio"
-          />
+          <div className="card-img">
+            <Image
+              fill
+              src="/portfolio_1080p.webp"
+              alt="Screenshot of the main page of my portfolio"
+            />
+          </div>
           <div className="card-content">
             <h3>This Portfolio</h3>
             <p>

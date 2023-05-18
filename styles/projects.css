@@ -27,11 +27,15 @@
   box-shadow: 0 5px 20px 10px rgba(10 15 22 / 0.4);
 }
 
-.card > img {
+.card > .card-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.card > .card-img > img {
   object-fit: contain;
-  border-radius: 8px 8px 0 0;
 }
 
 .card-content {
