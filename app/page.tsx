@@ -36,7 +36,7 @@ export default function Home() {
 
         <div className="btn">
           <a
-            href="./MB_resume.pdf"
+            href="/MB_resume.pdf"
             type="application/pdf"
             target="_blank"
             rel="noopener noreferrer"
