@@ -60,11 +60,12 @@ const About = () => {
             </div>
           </div>
         </motion.article>
+
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 0.4 }}
+          transition={{ delay: 0.6, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
@@ -99,6 +100,58 @@ const About = () => {
               <div className="btn">
                 <Link
                   href="https://github.com/Malcewicz/nextjs-portfolio"
+                  target="_blank"
+                >
+                  See the code
+                </Link>
+              </div>
+            </div>
+          </div>
+        </motion.article>
+
+        <motion.article
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.7, duration: 0.4 }}
+          className="card"
+        >
+          <div className="card-img">
+            <Image
+              fill
+              src="/sushi_project_1080p.webp"
+              alt="Screenshot of the main page of the sushi project website"
+            />
+          </div>
+          <div className="card-content">
+            <h3>Sushi Project</h3>
+            <p>
+              While learning Vite, I built a sushi website that showcases
+              responsiveness, fast loading times, animations, and an appealing
+              design. Although it's important to be transparent - it's a 1:1
+              replica from a tutorial I found on YouTube. Nonetheless, I gained
+              valuable knowledge, and I believe that the quality of the code is
+              what truly matters. Therefore, I consider it a valuable addition
+              to my portfolio until I have more of my own projects.
+            </p>
+            <ul>
+              <li>Vite</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div className="links">
+              <div className="btn">
+                <Link
+                  href="https://sushi-project-malcewicz.vercel.app"
+                  target="_blank"
+                >
+                  Live website
+                </Link>
+              </div>
+              <div className="btn">
+                <Link
+                  href="https://github.com/Malcewicz/sushi-project-vite"
                   target="_blank"
                 >
                   See the code
