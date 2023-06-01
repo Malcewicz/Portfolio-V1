@@ -113,6 +113,38 @@ const About = () => {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.4 }}
+          className="card"
+        >
+          <div className="card-img">
+            <Image
+              fill
+              src="/wakely_1080p.webp"
+              alt="Showcase of two main screens of the Wakely app"
+            />
+          </div>
+          <div className="card-content">
+            <h3>Mobile Flutter project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae doloremque, aliquam totam, eligendi, magnam consectetur
+              deleniti reprehenderit doloribus fuga illum ea laboriosam aut!
+              Fugit ullam iusto quos totam voluptatibus optio voluptatum
+              voluptatem, quibusdam, quas, quia quae. Quisquam, voluptatum
+              voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+            </p>
+            <ul>
+              <li>Figma</li>
+              <li>Flutter</li>
+              <li>Dart</li>
+            </ul>
+          </div>
+        </motion.article>
+
+        <motion.article
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ delay: 0.7, duration: 0.4 }}
           className="card"
         >
