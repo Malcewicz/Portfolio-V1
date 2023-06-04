@@ -34,7 +34,8 @@
   overflow: hidden;
 }
 
-.card > .card-img > img {
+.card > .card-img > img,
+.project-modal > .modal-img > img {
   object-fit: contain;
 }
 
@@ -48,7 +49,8 @@
   padding-bottom: 2rem;
 }
 
-.card-content > h3 {
+.card-content > h3,
+.project-modal > h3 {
   position: relative;
   width: 100%;
   font-size: 1.6rem;
@@ -102,6 +104,48 @@
   transform: none;
 }
 
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  padding-top: 56px;
+  background-color: rgba(10 15 22 / 0.75);
+}
+
+.project-modal {
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background-color: hsl(220, 35%, 16%);
+  overflow: hidden;
+}
+
+.project-modal > h3,
+.project-modal > p {
+  text-align: center;
+}
+
+/* .project-modal > .modal-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+} */
+
 @media screen and (max-width: 768px) {
   #projects > #wrapper {
     padding-top: 0;
@@ -141,5 +185,10 @@
   .links > .btn > a {
     font-size: 0.9rem;
     padding: 0.5rem 0.8rem;
+  }
+
+  .project-modal {
+    gap: 1rem;
+    padding: 1rem 1.5rem;
   }
 }

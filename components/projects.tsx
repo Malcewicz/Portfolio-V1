@@ -1,16 +1,21 @@
 "use client";
 
 import "@/styles/projects.css";
+import { useState } from "react";
 import MotionSection from "./motion_section";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-const About = () => {
+const Projects = () => {
+  const [showProject, setShowProject] = useState(false);
+
   return (
     <MotionSection id="projects">
       <h2>Featured Projects</h2>
+
       <article id="wrapper">
+        {/* Lakeview */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,6 +66,7 @@ const About = () => {
           </div>
         </motion.article>
 
+        {/* Portfolio */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,43 +115,56 @@ const About = () => {
           </div>
         </motion.article>
 
+        {/* Wakely */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 0.4 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
             <Image
               fill
               src="/wakely_1080p.webp"
-              alt="Showcase of two main screens of the Wakely app"
+              alt="Showcase of the Wakely app"
             />
           </div>
           <div className="card-content">
-            <h3>Mobile Flutter project</h3>
+            <h3>Wakely Mobile App</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae doloremque, aliquam totam, eligendi, magnam consectetur
-              deleniti reprehenderit doloribus fuga illum ea laboriosam aut!
-              Fugit ullam iusto quos totam voluptatibus optio voluptatum
-              voluptatem, quibusdam, quas, quia quae. Quisquam, voluptatum
-              voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing
+              Introducing my secret project: a mobile app that I personally
+              designed using Figma and brought to life using the incredible
+              Flutter framework from Google. From the ground up, I poured my
+              heart and soul into creating this sleek design, in both light and
+              dark mode, and user-friendly experience. While it's still a work
+              in progress, I'm excited to share the UI/UX design and perhaps
+              even the code once it's ready.
             </p>
             <ul>
               <li>Figma</li>
               <li>Flutter</li>
               <li>Dart</li>
             </ul>
+            <div className="links">
+              <div className="btn" onClick={() => setShowProject(true)}>
+                <a>See the design</a>
+              </div>
+              <div className="btn active">
+                <Link href="#" aria-disabled>
+                  Code private!
+                </Link>
+              </div>
+            </div>
           </div>
         </motion.article>
 
+        {/* Sushi Project */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.7, duration: 0.4 }}
+          transition={{ delay: 0.6, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
@@ -192,9 +211,41 @@ const About = () => {
             </div>
           </div>
         </motion.article>
+
+        {/* Modal for Wakely */}
+        {showProject ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
+            className="modal-bg"
+          >
+            <div className="project-modal">
+              <h3>Wakely App Design</h3>
+              {/* <div className="modal-img">
+                <Image
+                  fill
+                  src="/wakely_1080p.webp"
+                  alt="Showcase of the Wakely app"
+                />
+              </div> */}
+              <p>
+                Apologies for the inconvenience, this pop-up is still a work in
+                progress. <br />
+                It will be polished and ready for use by tomorrow.
+              </p>
+              <div className="links">
+                <div className="btn" onClick={() => setShowProject(false)}>
+                  <a>Close</a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ) : null}
       </article>
     </MotionSection>
   );
 };
 
-export default About;
+export default Projects;
