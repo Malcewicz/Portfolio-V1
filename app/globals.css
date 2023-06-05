@@ -148,14 +148,14 @@ li {
   padding: 0.65rem 1.875rem;
 }
 
-.btn.active {
-  background-color: rgba(25 160 230 / 0.5);
+.btn.disabled {
+  background-color: rgba(25 160 230 / 0.25);
   border-color: transparent;
   color: var(--text-color);
 }
 
-.btn.active:hover,
-.btn.active > a {
+.btn.disabled:hover,
+.btn.disabled > a {
   box-shadow: none;
   cursor: default;
 }

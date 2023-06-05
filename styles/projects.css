@@ -138,11 +138,15 @@
   text-align: center;
 }
 
+.project-modal > p {
+  font-size: 1.2rem;
+}
+
 .project-modal > .modal-img {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: hidden;
 }
 

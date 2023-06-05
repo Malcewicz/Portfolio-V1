@@ -20,7 +20,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.4 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
@@ -50,9 +50,54 @@ const Projects = () => {
               <div className="btn" onClick={() => setShowProject(true)}>
                 <a>See the design</a>
               </div>
-              <div className="btn active">
-                <Link href="#" aria-disabled>
-                  Code private!
+              <div className="btn disabled">
+                <a aria-disabled>Code private!</a>
+              </div>
+            </div>
+          </div>
+        </motion.article>
+
+        {/* Portfolio */}
+        <motion.article
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 0.4 }}
+          className="card"
+        >
+          <div className="card-img">
+            <Image
+              fill
+              src="/portfolio_1080p.webp"
+              alt="Screenshot of the main page of my portfolio"
+            />
+          </div>
+          <div className="card-content">
+            <h3>This Portfolio</h3>
+            <p>
+              This portfolio showcases my first implementation of Next.js,
+              TypeScript and Firebase. By harnessing Next.js and TypeScript, I
+              developed a dynamic web experience, complemented by CSS for a
+              sleek design. Leveraging Firebase for seamless deployment, the
+              website offers reliable performance and fast loading times. The
+              website is fully responsive, so it looks great on any device.
+            </p>
+            <ul>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>CSS</li>
+              <li>Firebase</li>
+            </ul>
+            <div className="links">
+              <div className="btn disabled">
+                <a aria-disabled>You're here!</a>
+              </div>
+              <div className="btn">
+                <Link
+                  href="https://github.com/Malcewicz/nextjs-portfolio"
+                  target="_blank"
+                >
+                  See the code
                 </Link>
               </div>
             </div>
@@ -64,7 +109,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.4 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
@@ -110,61 +155,12 @@ const Projects = () => {
           </div>
         </motion.article>
 
-        {/* Portfolio */}
-        <motion.article
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 0.4 }}
-          className="card"
-        >
-          <div className="card-img">
-            <Image
-              fill
-              src="/portfolio_1080p.webp"
-              alt="Screenshot of the main page of my portfolio"
-            />
-          </div>
-          <div className="card-content">
-            <h3>This Portfolio</h3>
-            <p>
-              This portfolio showcases my first implementation of Next.js,
-              TypeScript and Firebase. By harnessing Next.js and TypeScript, I
-              developed a dynamic web experience, complemented by CSS for a
-              sleek design. Leveraging Firebase for seamless deployment, the
-              website offers reliable performance and fast loading times. The
-              website is fully responsive, so it looks great on any device.
-            </p>
-            <ul>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>CSS</li>
-              <li>Firebase</li>
-            </ul>
-            <div className="links">
-              <div className="btn active">
-                <Link href="#" aria-disabled>
-                  You're here!
-                </Link>
-              </div>
-              <div className="btn">
-                <Link
-                  href="https://github.com/Malcewicz/nextjs-portfolio"
-                  target="_blank"
-                >
-                  See the code
-                </Link>
-              </div>
-            </div>
-          </div>
-        </motion.article>
-
         {/* Sushi Project */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6, duration: 0.4 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
           className="card"
         >
           <div className="card-img">
@@ -241,7 +237,7 @@ const Projects = () => {
                   />
                 </a>
               </div>
-              <p>Hint: click the image to open it in a new window :)</p>
+              <p>Hint: you can click the image to open it in a new window :)</p>
               <div className="links">
                 <div className="btn" onClick={() => setShowProject(false)}>
                   <a>Close</a>
