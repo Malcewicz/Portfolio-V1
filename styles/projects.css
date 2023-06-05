@@ -35,7 +35,7 @@
 }
 
 .card > .card-img > img,
-.project-modal > .modal-img > img {
+.project-modal > .modal-img img {
   object-fit: contain;
 }
 
@@ -120,7 +120,7 @@
 .project-modal {
   position: relative;
   width: 90vw;
-  max-width: 600px;
+  max-width: 750px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@
   padding: 1rem 2rem;
   border-radius: 12px;
   background-color: hsl(220, 35%, 16%);
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .project-modal > h3,
@@ -138,13 +138,17 @@
   text-align: center;
 }
 
-/* .project-modal > .modal-img {
+.project-modal > .modal-img {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
-} */
+}
+
+.project-modal > .custom-aspect {
+  aspect-ratio: 2.69 !important;
+}
 
 @media screen and (max-width: 768px) {
   #projects > #wrapper {

@@ -15,6 +15,50 @@ const Projects = () => {
       <h2>Featured Projects</h2>
 
       <article id="wrapper">
+        {/* Wakely */}
+        <motion.article
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 0.4 }}
+          className="card"
+        >
+          <div className="card-img">
+            <Image
+              fill
+              src="/wakely_1080p.webp"
+              alt="Showcase of the Wakely app"
+            />
+          </div>
+          <div className="card-content">
+            <h3>Wakely Mobile App</h3>
+            <p>
+              Introducing my secret project: a mobile app that I personally
+              designed using Figma and brought to life using the incredible
+              Flutter framework from Google. From the ground up, I poured my
+              heart and soul into creating this sleek design, in both light and
+              dark mode, and user-friendly experience. While it's still a work
+              in progress, I'm excited to share the UI/UX design and perhaps
+              even the code once it's ready.
+            </p>
+            <ul>
+              <li>Figma</li>
+              <li>Flutter</li>
+              <li>Dart</li>
+            </ul>
+            <div className="links">
+              <div className="btn" onClick={() => setShowProject(true)}>
+                <a>See the design</a>
+              </div>
+              <div className="btn active">
+                <Link href="#" aria-disabled>
+                  Code private!
+                </Link>
+              </div>
+            </div>
+          </div>
+        </motion.article>
+
         {/* Lakeview */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
@@ -115,50 +159,6 @@ const Projects = () => {
           </div>
         </motion.article>
 
-        {/* Wakely */}
-        <motion.article
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.4 }}
-          className="card"
-        >
-          <div className="card-img">
-            <Image
-              fill
-              src="/wakely_1080p.webp"
-              alt="Showcase of the Wakely app"
-            />
-          </div>
-          <div className="card-content">
-            <h3>Wakely Mobile App</h3>
-            <p>
-              Introducing my secret project: a mobile app that I personally
-              designed using Figma and brought to life using the incredible
-              Flutter framework from Google. From the ground up, I poured my
-              heart and soul into creating this sleek design, in both light and
-              dark mode, and user-friendly experience. While it's still a work
-              in progress, I'm excited to share the UI/UX design and perhaps
-              even the code once it's ready.
-            </p>
-            <ul>
-              <li>Figma</li>
-              <li>Flutter</li>
-              <li>Dart</li>
-            </ul>
-            <div className="links">
-              <div className="btn" onClick={() => setShowProject(true)}>
-                <a>See the design</a>
-              </div>
-              <div className="btn active">
-                <Link href="#" aria-disabled>
-                  Code private!
-                </Link>
-              </div>
-            </div>
-          </div>
-        </motion.article>
-
         {/* Sushi Project */}
         <motion.article
           initial={{ opacity: 0, y: 25 }}
@@ -223,18 +223,25 @@ const Projects = () => {
           >
             <div className="project-modal">
               <h3>Wakely App Design</h3>
-              {/* <div className="modal-img">
-                <Image
-                  fill
-                  src="/wakely_1080p.webp"
-                  alt="Showcase of the Wakely app"
-                />
-              </div> */}
-              <p>
-                Apologies for the inconvenience, this pop-up is still a work in
-                progress. <br />
-                It will be polished and ready for use by tomorrow.
-              </p>
+              <div className="modal-img custom-aspect">
+                <a href="/wakely_light.webp" target="_blank">
+                  <Image
+                    fill
+                    src="/wakely_light.webp"
+                    alt="Showcase of the Wakely app"
+                  />
+                </a>
+              </div>
+              <div className="modal-img custom-aspect">
+                <a href="/wakely_dark.webp" target="_blank">
+                  <Image
+                    fill
+                    src="/wakely_dark.webp"
+                    alt="Showcase of the Wakely app"
+                  />
+                </a>
+              </div>
+              <p>Hint: click the image to open it in a new window :)</p>
               <div className="links">
                 <div className="btn" onClick={() => setShowProject(false)}>
                   <a>Close</a>
