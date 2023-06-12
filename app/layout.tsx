@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   description:
     "Maciej is a software developer specializing in front-end web development and mobile applications creating responsive and user-centric designs",
   authors: [{ name: "Maciej Bernatowicz" }],
+  keywords:
+    "Maciej Bernatowicz, Maciej, Bernatowicz, Frontend Developer, Web Developer, Software Developer, React, Next.js, Flutter, UI Design",
   colorScheme: "dark",
 };
 
