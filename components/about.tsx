@@ -15,13 +15,13 @@ const About = () => {
         </p>
         <p>
           I'm always eager to explore new technologies and industry trends, and
-          I strive to keep my skills up-to-date. I have a head full of ideas, so
-          in my free time I like to work on my own projects or take beautiful
+          I strive to keep my skills up-to-date. I have a head full of ideas. In
+          my free time I like to work on my own projects or take beautiful
           photos.
         </p>
         <p>
-          Currently I'm working towards a project that may become my own
-          start-up.
+          Currently I'm working on my mobile application project built with
+          Flutter.
         </p>
         {/* <p>Here are a few tecchnologies I know:</p> */}
       </div>

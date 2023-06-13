@@ -76,9 +76,9 @@ const Projects = () => {
             <h3>This Portfolio</h3>
             <p>
               This portfolio showcases my first implementation of Next.js,
-              TypeScript and Firebase. By harnessing Next.js and TypeScript, I
-              developed a dynamic web experience, complemented by CSS for a
-              sleek design. Leveraging Firebase for seamless deployment, the
+              TypeScript and Firebase. By using Next.js with TypeScript, I
+              developed a great web experience, complemented by CSS for a sleek
+              design. Leveraging Firebase for seamless automatic deployment, the
               website offers reliable performance and fast loading times. The
               website is fully responsive, so it looks great on any device.
             </p>
@@ -128,7 +128,7 @@ const Projects = () => {
               with a Mobile First approach, I coded the website using semantic
               HTML5, CSS, and JavaScript.
               <br />
-              Since its launch, the website has already attracted nearly two
+              Since its launch, the website has already attracted over two
               thousand users.
             </p>
             <ul>
