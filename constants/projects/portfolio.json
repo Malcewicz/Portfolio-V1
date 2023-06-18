@@ -1,0 +1,23 @@
+{
+    "title": "This Portfolio",
+    "description": "This portfolio showcases my first implementation of Next.js, TypeScript and Firebase. By using Next.js with TypeScript, I developed a great web experience, complemented by CSS for a sleek design. Leveraging Firebase for seamless automatic deployment, the website offers reliable performance and fast loading times. The website is fully responsive, so it looks great on any device.",
+    "tags": [
+        {
+            "id": 1,
+            "name": "Next.js"
+        },
+        {
+            "id": 2,
+            "name": "TypeScript"
+        },
+        {
+            "id": 3,
+            "name": "CSS"
+        },
+        {
+            "id": 4,
+            "name": "Firebase"
+        }
+    ],
+    "codeLink": "https://github.com/Malcewicz/nextjs-portfolio"
+}

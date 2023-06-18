@@ -74,6 +74,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--light-text-color);
+  white-space: pre-line;
 }
 
 .card-content > ul {

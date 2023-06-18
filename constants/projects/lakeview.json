@@ -1,0 +1,24 @@
+{
+    "title": "LakeView Apartments",
+    "description": "In my first freelance project, I designed and coded a responsive, single-page, static website. Using Figma, closely following my client's specifications, I created the design they desired. Then, with a Mobile First approach, I coded the website using semantic HTML5, CSS, and JavaScript. \n Since its launch, the website has already attracted over two thousand users.",
+    "tags": [
+        {
+            "id": 1,
+            "name": "HTML"
+        },
+        {
+            "id": 2,
+            "name": "CSS"
+        },
+        {
+            "id": 3,
+            "name": "JavaScript"
+        },
+        {
+            "id": 4,
+            "name": "Figma"
+        }
+    ],
+    "websiteLink": "https://lakeviewprzewiez.pl",
+    "codeLink": "https://github.com/Malcewicz/LakeView-V2"
+}

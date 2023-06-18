@@ -6,6 +6,10 @@ import MotionSection from "./motion_section";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import wakely from "@/constants/projects/wakely.json";
+import portfolio from "@/constants/projects/portfolio.json";
+import lakeview from "@/constants/projects/lakeview.json";
+import sushi from "@/constants/projects/sushi.json";
 
 const Projects = () => {
   const [showProject, setShowProject] = useState(false);
@@ -27,24 +31,16 @@ const Projects = () => {
             <Image
               fill
               src="/wakely_1080p.webp"
-              alt="Showcase of the Wakely app"
+              alt="Showcase of the Wakely mobile app"
             />
           </div>
           <div className="card-content">
-            <h3>Wakely Mobile App</h3>
-            <p>
-              Introducing my secret project: a mobile app that I personally
-              designed using Figma and brought to life using the incredible
-              Flutter framework from Google. From the ground up, I poured my
-              heart and soul into creating this sleek design, in both light and
-              dark mode, and user-friendly experience. While it's still a work
-              in progress, I'm excited to share the UI/UX design and perhaps
-              even the code once it's ready.
-            </p>
+            <h3>{wakely.title}</h3>
+            <p>{wakely.description}</p>
             <ul>
-              <li>Figma</li>
-              <li>Flutter</li>
-              <li>Dart</li>
+              {wakely.tags.map((tag) => {
+                return <li key={tag.id}>{tag.name}</li>;
+              })}
             </ul>
             <div className="links">
               <div className="btn" onClick={() => setShowProject(true)}>
@@ -73,30 +69,19 @@ const Projects = () => {
             />
           </div>
           <div className="card-content">
-            <h3>This Portfolio</h3>
-            <p>
-              This portfolio showcases my first implementation of Next.js,
-              TypeScript and Firebase. By using Next.js with TypeScript, I
-              developed a great web experience, complemented by CSS for a sleek
-              design. Leveraging Firebase for seamless automatic deployment, the
-              website offers reliable performance and fast loading times. The
-              website is fully responsive, so it looks great on any device.
-            </p>
+            <h3>{portfolio.title}</h3>
+            <p>{portfolio.description}</p>
             <ul>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>CSS</li>
-              <li>Firebase</li>
+              {portfolio.tags.map((tag) => {
+                return <li key={tag.id}>{tag.name}</li>;
+              })}
             </ul>
             <div className="links">
               <div className="btn disabled">
                 <a aria-disabled>You're here!</a>
               </div>
               <div className="btn">
-                <Link
-                  href="https://github.com/Malcewicz/nextjs-portfolio"
-                  target="_blank"
-                >
+                <Link href={portfolio.codeLink} target="_blank">
                   See the code
                 </Link>
               </div>
@@ -120,17 +105,8 @@ const Projects = () => {
             />
           </div>
           <div className="card-content">
-            <h3>LakeView Apartments</h3>
-            <p>
-              In my first freelance project, I designed and coded a responsive,
-              single-page, static website. Using Figma, closely following my
-              client's specifications, I created the design they desired. Then,
-              with a Mobile First approach, I coded the website using semantic
-              HTML5, CSS, and JavaScript.
-              <br />
-              Since its launch, the website has already attracted over two
-              thousand users.
-            </p>
+            <h3>{lakeview.title}</h3>
+            <p>{lakeview.description}</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -139,15 +115,12 @@ const Projects = () => {
             </ul>
             <div className="links">
               <div className="btn">
-                <Link href="https://lakeviewprzewiez.pl" target="_blank">
+                <Link href={lakeview.websiteLink} target="_blank">
                   Live website
                 </Link>
               </div>
               <div className="btn">
-                <Link
-                  href="https://github.com/Malcewicz/LakeView-V2"
-                  target="_blank"
-                >
+                <Link href={lakeview.codeLink} target="_blank">
                   See the code
                 </Link>
               </div>
@@ -171,36 +144,21 @@ const Projects = () => {
             />
           </div>
           <div className="card-content">
-            <h3>Sushi Project</h3>
-            <p>
-              While learning Vite, I built a sushi website that showcases
-              responsiveness, fast loading times, animations, and an appealing
-              design. Although it's important to be transparent - it's a 1:1
-              replica from a tutorial I found on YouTube. Nonetheless, I gained
-              valuable knowledge, and I believe that the quality of the code is
-              what truly matters. Therefore, I consider it a valuable addition
-              to my portfolio until I have more of my own projects.
-            </p>
+            <h3>{sushi.title}</h3>
+            <p>{sushi.description}</p>
             <ul>
-              <li>Vite</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+              {sushi.tags.map((tag) => {
+                return <li key={tag.id}>{tag.name}</li>;
+              })}
             </ul>
             <div className="links">
               <div className="btn">
-                <Link
-                  href="https://sushi-project-malcewicz.vercel.app"
-                  target="_blank"
-                >
+                <Link href={sushi.websiteLink} target="_blank">
                   Live website
                 </Link>
               </div>
               <div className="btn">
-                <Link
-                  href="https://github.com/Malcewicz/sushi-project-vite"
-                  target="_blank"
-                >
+                <Link href={sushi.codeLink} target="_blank">
                   See the code
                 </Link>
               </div>

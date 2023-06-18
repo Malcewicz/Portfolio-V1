@@ -1,0 +1,18 @@
+{
+    "title": "Wakely Mobile App",
+    "description": "Introducing my secret project: a mobile app that I personally designed using Figma and brought to life using the incredible Flutter framework from Google. From the ground up, I poured my heart and soul into creating this sleek design, in both light and dark mode, and user-friendly experience. \n While it's still a work in progress, I'm excited to share the UI/UX design and perhaps even the code once it's ready.",
+    "tags": [
+        {
+            "id": 1,
+            "name": "Figma"
+        },
+        {
+            "id": 2,
+            "name": "Flutter"
+        },
+        {
+            "id": 3,
+            "name": "Dart"
+        }
+    ]
+}
