@@ -1,10 +1,7 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getPerformance } from "firebase/performance";
+import firebase from "firebase";
+import "firebase/analytics";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyBtZaUpTW-6qGZgHgcW1y6UyhhKBLf-yEQ",
   authDomain: "mb-portfolio-16dff.firebaseapp.com",
@@ -16,6 +13,9 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const perf = getPerformance(app);
+if (typeof window !== "undefined" && !firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+  if ("measurementId" in firebaseConfig) firebase.analytics();
+}
+
+export default firebase;
