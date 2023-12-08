@@ -17,10 +17,10 @@ const Experience = () => {
         className="work"
       >
         <span>
-          <h4>Welcome Airport Services</h4>
+          <h4>Junior IT Specialist</h4>
           <p>10/2022 - 11/2022</p>
         </span>
-        <h6>Junior IT Specialist</h6>
+        <h6>Welcome Airport Services</h6>
         <p>During this internship I gained hands-on experience in:</p>
         <ul className="work-list">
           <li>network monitoring</li>
@@ -45,10 +45,10 @@ const Experience = () => {
         className="work"
       >
         <span>
-          <h4>Płatek Piotr Płatek</h4>
+          <h4>Computer Technician</h4>
           <p>11/2021 - 12/2021</p>
         </span>
-        <h6>Computer Technician</h6>
+        <h6>Płatek Piotr Płatek</h6>
         <p>During my internship as a Computer Technician, my tasks included:</p>
         <ul className="work-list">
           <li>
