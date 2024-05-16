@@ -1,4 +1,4 @@
-import "/styles/footer.css";
+import "@/app/_styles/footer.css";
 import Link from "next/link";
 
 const Footer = () => {

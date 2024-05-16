@@ -1,15 +1,15 @@
 "use client";
 
-import "@/styles/projects.css";
+import "@/app/_styles/projects.css";
 import { useState } from "react";
 import MotionSection from "./motion_section";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import wakely from "@/constants/projects/wakely.json";
-import portfolio from "@/constants/projects/portfolio.json";
-import lakeview from "@/constants/projects/lakeview.json";
-import sushi from "@/constants/projects/sushi.json";
+import wakely from "@/lib/projects/wakely.json";
+import portfolio from "@/lib/projects/portfolio.json";
+import lakeview from "@/lib/projects/lakeview.json";
+import sushi from "@/lib/projects/sushi.json";
 
 const Projects = () => {
   const [showProject, setShowProject] = useState(false);

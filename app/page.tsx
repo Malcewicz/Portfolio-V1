@@ -1,10 +1,10 @@
 "use client";
 
 import "@/app/globals.css";
-import "@/styles/hero_page.css";
+import "@/app/_styles/hero_page.css";
 import SvgHero from "@/public/undraw_heatmap";
 import { motion } from "framer-motion";
-import ExternalLink from "@/components/external_link";
+import ExternalLink from "@/app/_components/external_link";
 
 export default function Home() {
   return (

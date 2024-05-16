@@ -1,4 +1,4 @@
-import "@/styles/contact.css";
+import "@/app/_styles/contact.css";
 import MotionSection from "./motion_section";
 import {
   AiOutlineGithub,

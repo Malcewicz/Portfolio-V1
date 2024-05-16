@@ -1,6 +1,6 @@
 "use client";
 
-import "/styles/navbar.css";
+import "@/app/_styles/navbar.css";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";

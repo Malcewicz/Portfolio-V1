@@ -1,4 +1,4 @@
-import "@/styles/education.css";
+import "@/app/_styles/education.css";
 import MotionSection from "./motion_section";
 
 const Education = () => {

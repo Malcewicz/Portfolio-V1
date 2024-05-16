@@ -1,6 +1,6 @@
 "use client";
 
-import "@/styles/experience.css";
+import "@/app/_styles/experience.css";
 import MotionSection from "./motion_section";
 import { motion } from "framer-motion";
 

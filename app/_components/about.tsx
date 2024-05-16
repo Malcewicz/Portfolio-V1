@@ -1,4 +1,4 @@
-import "@/styles/about.css";
+import "@/app/_styles/about.css";
 import MotionSection from "./motion_section";
 
 const About = () => {
