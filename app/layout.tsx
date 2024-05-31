@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Navbar from "@/app/_components/navbar";
 import About from "@/app/_components/about";
 import Projects from "@/app/_components/projects";
@@ -48,6 +49,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-DZL0Y5P3XE" />
     </html>
   );
 }
