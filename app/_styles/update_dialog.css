@@ -1,0 +1,35 @@
+#update-dialog {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 22px 22px calc(22px - 16px);
+  margin-left: 24px;
+  background: hsl(220 35% 16% / 0.75);
+  backdrop-filter: blur(8px);
+  border: 2px solid hsl(220 35% 30% / 0.75);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 2px rgba(10 15 22 / 0.25);
+  z-index: 100;
+}
+
+#update-dialog > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#update-dialog > .header > h4 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+#update-dialog > .header > svg {
+  cursor: pointer;
+}
+
+#update-dialog > .subtitle {
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 500px;
+}

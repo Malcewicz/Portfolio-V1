@@ -8,6 +8,7 @@ import Footer from "@/app/_components/footer";
 import Experience from "@/app/_components/experience";
 import Contact from "@/app/_components/contact";
 import Education from "@/app/_components/education";
+import UpdateDialog from "@/app/_components/update_dialog";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,7 +25,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Maciej Bernatowicz" }],
   keywords:
     "Maciej Bernatowicz, Maciej, Bernatowicz, Frontend Developer, Web Developer, Software Developer, React, Next.js, Flutter, UI Design",
-  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -43,6 +43,8 @@ export default function RootLayout({
           <Experience />
           <Education />
           <Contact />
+          {/* Dialog informing about new version of the website */}
+          <UpdateDialog />
         </main>
         <Footer />
       </body>
