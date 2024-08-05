@@ -27,13 +27,14 @@ const UpdateDialog = () => {
       ref={dialog}
     >
       <div className="header">
-        <h4 className="title">New version coming soon!</h4>
+        <h4 className="title">A new version of this portfolio is available!</h4>
         <AiOutlineClose onClick={closeDialog} size={22} />
       </div>
       <p className="subtitle">
-        I'm excited to announce that a new version of this website is in the
-        works. While it's still under construction, feel free to explore the
-        current content.
+        I'm excited to announce that a new version of this website is now
+        available! It's a complete redesign and includes all the updated
+        information about me and more. Please visit the new site for the latest
+        updates and features.
       </p>
       <div className="btn">
         <Link href="https://v2.bernatowicz.dev/">
